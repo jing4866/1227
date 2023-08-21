@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/OutOfWorld/',
+  base: '/1227/',
   title: "十二廿柒.",  // Header's Logo Title
   description: "世界之外，无界之境。",
   cleanUrls: true,
