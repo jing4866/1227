@@ -56,6 +56,11 @@ export default defineConfig({
               text: 'Javascript / ES6',
               link: '/javascript/'
             },
+            // 分类： Typescript
+            {
+              text: 'Typescript',
+              link: '/typescript/'
+            },
             // 分类： Vue
             {
               text: 'Vue2.0 / Vue3.0',
