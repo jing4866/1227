@@ -54,7 +54,21 @@ export default defineConfig({
             // 分类： JS
             {
               text: 'Javascript / ES6',
-              link: '/javascript/'
+              link: '/javascript/',
+              items: [
+                {
+                  text: 'JS 的那些报错信息.',
+                  link: '/javascript/jsErrorType'
+                },
+                {
+                  text: 'Object 真的是空对象吗？',
+                  link: '/javascript/objIsEmpty'
+                },
+                {
+                  text: 'JS 的 AO 和 GO 你造吗？',
+                  link: '/javascript/objIsEmpty'
+                }
+              ] 
             },
             // 分类： Typescript
             {
