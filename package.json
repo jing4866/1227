@@ -2,7 +2,7 @@
   "scripts": {
     "docs:dev": "vitepress --host 127.0.0.1 dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress --host 127.0.0.1 preview docs"
   },
   "dependencies": {
     "vue": "^3.3.4"

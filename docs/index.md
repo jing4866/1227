@@ -1,4 +1,5 @@
 ---
+
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
@@ -27,3 +28,9 @@ features:
     link: /blackhole/
 
 ---
+
+<script setup>
+import CircleAnimation from './components/CircleAnimation.vue'
+</script>
+
+<CircleAnimation />
