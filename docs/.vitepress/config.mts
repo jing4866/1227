@@ -9,7 +9,7 @@ export default defineConfig({
   head: [
     [
       'link', 
-      { rel: 'icon', href: '/favicon.ico' }
+      { rel: 'icon', href: '/public/favicon.ico' }
     ]
   ],
   themeConfig: {
@@ -19,16 +19,16 @@ export default defineConfig({
       // { text: 'Home', link: '/' },
       // { text: 'Examples', link: '/markdown-examples' }
       { text: '首页', link: '/' },
-      { text: '技术世界', link: '/techblog/' },
-      { text: '花花世界', link: '/dazzling/' },
-      { text: '世界之外', link: '/blackhole/' }
+      { text: '技术世界', link: '/views/techblog/' },
+      { text: '花花世界', link: '/views/dazzling/' },
+      { text: '世界之外', link: '/views/blackhole/' }
     ],
 
     sidebar: {
-      '/techblog/': [
+      '/views/techblog/': [
         {
           text: '技术世界',
-          base: '/techblog',
+          base: '/views/techblog',
           items: [
             // 分类： HTML 
             {
@@ -89,7 +89,7 @@ export default defineConfig({
         }
       ],
       '/dazzling/': {
-        'base': '/dazzling',
+        'base': '/views/dazzling',
         'items': [
           {
             'text': '花花世界',
@@ -98,7 +98,7 @@ export default defineConfig({
         ]
       },
       '/blackhole/': {
-        'base': '/blackhole',
+        'base': '/views/blackhole',
         'items': [
           {
             'text': '世界之外',
