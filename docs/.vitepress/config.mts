@@ -42,8 +42,8 @@ export default defineConfig({
               link: '/css/',
               items: [
                 {
-                  text: '你不知道的CSS01',
-                  link: '/css/unknowcss01'
+                  text: 'CSS 之 mix-blend-mode',
+                  link: '/css/mixBlendMode'
                 },
                 {
                   text: '你不知道的CSS02',
@@ -57,8 +57,8 @@ export default defineConfig({
               link: '/javascript/',
               items: [
                 {
-                  text: 'JS 的那些报错信息.',
-                  link: '/javascript/jsErrorType'
+                  text: 'JS 常见报错信息.',
+                  // link: '/javascript/jsErrorType'
                 },
                 {
                   text: 'Object 真的是空对象吗？',
@@ -66,7 +66,11 @@ export default defineConfig({
                 },
                 {
                   text: 'JS 的 AO 和 GO 你造吗？',
-                  link: '/javascript/objIsEmpty'
+                  link: ''
+                },
+                {
+                  text: '那些变态的面试题',
+                  link: '/javascript/interview'
                 }
               ] 
             },
@@ -88,7 +92,7 @@ export default defineConfig({
           ]
         }
       ],
-      '/dazzling/': {
+      '/views/dazzling/': {
         'base': '/views/dazzling',
         'items': [
           {
@@ -97,7 +101,7 @@ export default defineConfig({
           }
         ]
       },
-      '/blackhole/': {
+      '/views/blackhole/': {
         'base': '/views/blackhole',
         'items': [
           {
@@ -122,6 +126,9 @@ export default defineConfig({
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     // ]
+  },
+  markdown: {
+    lineNumbers: true // JS代码块显示行号
   }
 })
 
