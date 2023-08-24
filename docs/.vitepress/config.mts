@@ -73,6 +73,10 @@ export default defineConfig({
                   link: ''
                 },
                 {
+                  text: '那些基础的面试题',
+                  link: '/javascript/basejs'
+                },
+                {
                   text: '那些变态的面试题',
                   link: '/javascript/interview'
                 }
