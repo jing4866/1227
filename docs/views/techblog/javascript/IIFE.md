@@ -1,3 +1,13 @@
+---
+head:
+  - - meta
+    - name: description
+      content: 如何利用 IIFE 立即执行函数提升性能
+  - - meta
+    - name: keywords
+      content: IIFE 立即调用函数表达式 自执行函数 匿名函数自执行 
+---
+
 # IIFE 是啥？
 
 看这些缩写是不头疼？ 疼也没办法，IIFE 好重要的嘞！

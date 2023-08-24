@@ -91,7 +91,13 @@ export default defineConfig({
             // 分类： 深入学习
             {
               text: 'Tricks',
-              link: '/trick/'
+              link: '/trick/',
+              items: [
+                {
+                  text: '前端的一些小技巧 01',
+                  link: '/trick/tricks'
+                }
+              ]
             }
           ]
         }
