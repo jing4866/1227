@@ -65,6 +65,10 @@ export default defineConfig({
                   link: '/javascript/objIsEmpty'
                 },
                 {
+                  text: 'IIFE 如何提升性能.',
+                  link: '/javascript/IIFE'
+                },
+                {
                   text: 'JS 的 AO 和 GO 你造吗？',
                   link: ''
                 },
