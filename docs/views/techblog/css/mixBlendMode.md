@@ -1,4 +1,4 @@
-# 好玩的 CSS 之 blend-mode  
+# 好玩的 CSS 之 background-blend-mode 和 mix-blend-mode  
 
 
 

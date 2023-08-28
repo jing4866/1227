@@ -42,7 +42,7 @@ export default defineConfig({
               link: '/css/',
               items: [
                 {
-                  text: 'CSS 之 mix-blend-mode',
+                  text: 'CSS 之 blend-mode',
                   link: '/css/mixBlendMode'
                 },
                 {
@@ -58,7 +58,7 @@ export default defineConfig({
               items: [
                 {
                   text: 'JS 常见报错信息.',
-                  // link: '/javascript/jsErrorType'
+                  link: '/javascript/jsErrorType'
                 },
                 {
                   text: 'Object 真的是空对象吗？',

@@ -13,3 +13,5 @@ console.log(a); // Expected '10undefined'
 ```
 
 > 提示： 这道题的重点是在考察隐式转换和预编译
+
+
