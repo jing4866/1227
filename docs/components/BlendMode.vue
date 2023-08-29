@@ -155,7 +155,7 @@ const modeChange = (val) => {
 
 </script>
 
-<style>
+<style scoped>
 .container{
     display: flex;
     .select-box{
