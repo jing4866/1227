@@ -5,6 +5,8 @@
     "docs:preview": "vitepress --host 127.0.0.1 preview docs"
   },
   "dependencies": {
+    "element-plus": "^2.3.12",
+    "vitepress": "^1.0.0-rc.9",
     "vue": "^3.3.4"
   }
 }

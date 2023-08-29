@@ -196,13 +196,13 @@ var request = (function(){
 
 *****
 
-正题写完了，补充一个小知识点: 组件库封装的结构
+正题写完了，补充一个小知识点: [组件库封装](./prototype)的基本结构
 
 ```js
 
-(function(){
+;(function(){
     // ... do something...
-    function Test(){
+    function Test(options){
         // ... do something...
     };
     Test.prototype = {
@@ -212,6 +212,6 @@ var request = (function(){
 })();
 
 // 调用
-var test = new Test();
+var test = new Test(options);
 
 ```
