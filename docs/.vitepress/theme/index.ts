@@ -2,6 +2,8 @@
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
 import './style.css'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
 export default {
   extends: Theme,
@@ -12,5 +14,7 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+    
+    app.use(ElementPlus)
   }
 }

@@ -42,8 +42,8 @@ export default defineConfig({
               link: '/css/',
               items: [
                 {
-                  text: '你不知道的CSS01',
-                  link: '/css/unknowcss01'
+                  text: 'CSS 之 blend-mode',
+                  link: '/css/mixBlendMode'
                 },
                 {
                   text: '你不知道的CSS02',
@@ -57,7 +57,7 @@ export default defineConfig({
               link: '/javascript/',
               items: [
                 {
-                  text: 'JS 的那些报错信息.',
+                  text: 'JS 常见报错信息.',
                   link: '/javascript/jsErrorType'
                 },
                 {
@@ -65,8 +65,20 @@ export default defineConfig({
                   link: '/javascript/objIsEmpty'
                 },
                 {
+                  text: 'IIFE 如何提升性能.',
+                  link: '/javascript/IIFE'
+                },
+                {
                   text: 'JS 的 AO 和 GO 你造吗？',
-                  link: '/javascript/objIsEmpty'
+                  link: ''
+                },
+                {
+                  text: '那些基础的面试题',
+                  link: '/javascript/basejs'
+                },
+                {
+                  text: '那些变态的面试题',
+                  link: '/javascript/interview'
                 }
               ] 
             },
@@ -83,12 +95,18 @@ export default defineConfig({
             // 分类： 深入学习
             {
               text: 'Tricks',
-              link: '/trick/'
+              link: '/trick/',
+              items: [
+                {
+                  text: '前端的一些小技巧 01',
+                  link: '/trick/tricks'
+                }
+              ]
             }
           ]
         }
       ],
-      '/dazzling/': {
+      '/views/dazzling/': {
         'base': '/views/dazzling',
         'items': [
           {
@@ -97,7 +115,7 @@ export default defineConfig({
           }
         ]
       },
-      '/blackhole/': {
+      '/views/blackhole/': {
         'base': '/views/blackhole',
         'items': [
           {
@@ -122,6 +140,9 @@ export default defineConfig({
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     // ]
+  },
+  markdown: {
+    lineNumbers: true // JS代码块显示行号
   }
 })
 

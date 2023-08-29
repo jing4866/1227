@@ -26,6 +26,7 @@ export default {
     bottom: -50%;
     right: -48%;
     border: 3px solid #bd34fe;
+    border-color: -webkit-linear-gradient( 120deg, #bd34fe 30%, #41d1ff );
     mix-blend-mode: multiply;
     animation: circle-running-outer 6s linear -5s infinite;
 }
@@ -34,6 +35,7 @@ export default {
     bottom: -48%;
     right: -50%;
     border: 3px solid #41d1ff;
+    border-color: -webkit-linear-gradient( 120deg, #bd34fe 30%, #41d1ff );
     mix-blend-mode: multiply;
     animation: circle-running-inner 7s linear -4s infinite;   
 }
