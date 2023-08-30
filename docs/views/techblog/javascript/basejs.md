@@ -52,3 +52,258 @@ Object.prototype
 8. 是所有的对象都继承于 Object 吗？
 
 > 不是， Object.create(null) 就没有原型。
+
+9. 请指出下面代码不能正常输出的原因
+
+```js
+
+const obj = {
+    name: 'Joe',
+    age: 18,
+    job: 'worker'
+}
+
+for(var key in obj){
+    console.log(obj.key);
+}
+
+// 原因： 浏览器引擎的操作 -> obj.key -> obj['key']
+
+```
+
+10. 判断以下代码的输出结果
+
+```js
+
+function Person(){};
+
+const person = new Person();
+
+console.log( p instanceof Person ); // Expected true
+
+console.log( p instanceof Object ); // Expected true
+
+console.log( [] instanceof Array ); // Expected true
+
+console.log( [] instanceof Object ); // Expected true
+
+console.log( {} instanceof Object ); // Expected true
+
+```
+
+11. 判断以下代码的输出结果
+
+```js
+
+const val = [] || {};
+
+console.log( val );  // Expected []
+
+```
+
+12. 判断是一个变量是否为空数组的方法有哪些？
+
+```js
+
+const arr = [];
+
+console.log( arr.constructor );  // Expected f Array()
+
+console.log( arr instanceof Array ); // Expected true
+
+// 实际开发中推荐
+console.log( Object.prototype.toString.call(a) === '[object Array]' ); // Expected true
+
+```
+
+13. 判断以下代码的执行结果
+
+```js
+
+function fn(){
+    bar.apply(null, arguments);
+}
+
+function bar(){
+    console.log(arguments);
+}
+
+fn(1, 2, 3, 4, 5);
+
+// Expected [1, 2, 3, 4, 5]
+
+```
+
+14. JS 的 typeof 可能返回的值有哪些？
+
+> number / string / boolean / object / undefined / function
+
+:::warning
+
+typeof(null) 也返回 object 
+
+:::
+
+15. 判断以下代码的输出结果
+
+```js
+
+function fn (x, y, z){
+    arguments[2] = 10;
+    console.log( z );
+
+    z = 1;
+    console.log( z ); 
+}
+
+fn(1, 2, 3);
+
+// Expected 10
+// Expected 1
+
+```
+
+16.判断以下代码的输出结果
+
+```js
+
+var fn = (
+    function a(){
+        return 'abc';
+    },
+    function b(){
+        return 1
+    }
+);
+
+console.log( typeof(fn) );  // Expected 'function'
+
+```
+
+16.判断以下代码的输出结果
+
+```js
+
+var fn = (
+    function a(){
+        return 'abc';
+    },
+    function b(){
+        return 1
+    }
+)();
+
+console.log( typeof(fn) );  // Expected 'number'
+
+```
+
+17. 判断以下代码的输出结果
+
+```js
+
+console.log( NaN == NaN ); // Expected false   NaN不等于任何东西，包括自身
+
+console.log( NaN === NaN ); // Expected false
+
+console.log( undefined == 0 ); // Expected false
+
+console.log( null == 0 ); // Expected false
+
+console.log( undefined == null ); // Expected true
+
+console.log( undefined === null ); // Expected false
+
+console.log( isNaN('100') ); // Expected false  isNaN 是有隐式类型转换的： Number('100') -> isNaN(100)
+
+console.log( parseInt('100a') == 100 ); // Expected true  parseInt 是显示类型转换
+
+```
+
+:::warning
+
+说明： undefined == null 为什么是true ？
+
+因为：   
+  1. undefined > 0 为 false， undefined < 0 为 false， undefined == 0 为 false  
+  2. null > 0 为 false， null < 0 为 false， null == 0 为 false  
+
+所以： undefined == null 为 true  
+
+但是： 二者类型不同，所以 '===' 的时候为 false
+
+:::
+
+17. 关于 {} 的题
+  + {} 和 {} 二者是否相等 ( === )
+
+```js 
+
+let obj_1 = {}
+let obj_2 = {}
+
+console.log( obj_1 === obj_2 ); // Expected false
+
+```
+
+  + 为什么不相等
+
+> 对象的引用地址不相同
+
+  + 如何让它们相等
+
+```js
+
+let obj_1 = {}
+let obj_2 = obj_1
+console.log( obj1 === obj_2 );  // Expected true
+
+```
+
+18. 判断以下代码的输出结果
+
+```js
+
+let a = 1;
+
+function fn(){
+    var a = 2;
+    this.a = 3;
+    console.log(a); 
+};
+
+fn();
+new fn();
+console.log(a);
+
+// Expected 2
+// Expected 2
+// Expected 3
+
+```
+
+19. 判断以下代码的输出结果
+
+```js
+
+var a = 0 ;
+
+function fn(){
+    a = 1;
+    console.log(a);
+    console.log(this.a);
+    var a;
+    console.log(a);
+}
+
+fn();
+new fn();
+
+// fn Expected： 1
+// fn Expected： 0
+// fn Expected： 1
+
+// new fn Expected： 1
+// new fn Expected： undefined
+// new fn Expected： 1
+
+```

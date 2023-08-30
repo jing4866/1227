@@ -8,5 +8,8 @@
     "element-plus": "^2.3.12",
     "vitepress": "^1.0.0-rc.9",
     "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
   }
 }

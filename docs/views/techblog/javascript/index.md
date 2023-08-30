@@ -1,2 +1,2 @@
-# JavaScript and ES6
+# JavaScript
     - 每天一点 JS

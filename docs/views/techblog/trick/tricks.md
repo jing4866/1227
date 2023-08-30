@@ -103,3 +103,37 @@ toggle ^= 1; // Expected 1
 ```
 
 [更多关于运算符的参考](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Bitwise_AND)
+
+9. 隐式判断一个 key 是否存在于对象中
+
+```js
+
+const obj = {
+    name: '1227',
+    age: 18
+}
+
+console.log( 'rich' in obj ); // Expected false
+console.log( obj.hasOwnProperty('rich') ); // Expected false
+
+
+// 注意 ： in 如果在对象中找不到，会继续去原型链上去查找，hasOwnProperty 是会排除原型 prototype 上的属性的。
+
+``` 
+
+10. 在开发中做数据类型判断的小技巧 —— 判断数组
+
+```js
+
+// 判断数据类型是否为数组,其他类推
+const toStr = Object.prototype.toString;
+const trueTip = '[object Array]';
+
+// 调用
+if( toStr.call([]) === trueTip ){
+    console.log('Yes, it is a Array type.');
+}else{
+    console.log('No, it is not a Array type.');
+}
+
+```

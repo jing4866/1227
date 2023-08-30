@@ -42,18 +42,18 @@ export default defineConfig({
               link: '/css/',
               items: [
                 {
-                  text: 'CSS 之 blend-mode',
-                  link: '/css/mixBlendMode'
+                  text: '纯 CSS 创造的世界',
+                  link: '/css/csscreateworld'
                 },
                 {
-                  text: '你不知道的CSS02',
-                  link: '/css/unknowcss02'
+                  text: 'CSS 之 blend-mode',
+                  link: '/css/mixBlendMode'
                 }
               ] 
             },
             // 分类： JS
             {
-              text: 'Javascript / ES6',
+              text: 'JavaScript',
               link: '/javascript/',
               items: [
                 {
@@ -82,15 +82,24 @@ export default defineConfig({
                 }
               ] 
             },
+            {
+              text: 'ES6 / ES7 / ES8...',
+              link: '/es/',
+            },
             // 分类： Typescript
             {
-              text: 'Typescript',
+              text: 'TypeScript',
               link: '/typescript/'
             },
             // 分类： Vue
             {
-              text: 'Vue2.0 / Vue3.0',
-              link: '/javascript/'
+              text: 'Vue2.0',
+              link: '/v2/'
+            },
+            // 分类： Vue
+            {
+              text: ' Vue3.0',
+              link: '/v3/'
             },
             // 分类： 深入学习
             {
