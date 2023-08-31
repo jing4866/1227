@@ -3,7 +3,7 @@
 
 
 <script setup>
-import CSSWorld from '../../../components/CSSWorld.vue'
+import CssWorld from '../../../components/CssWorld.vue'
 </script>
 
-<CSSWorld></CSSWorld>
+<CssWorld></CssWorld>
