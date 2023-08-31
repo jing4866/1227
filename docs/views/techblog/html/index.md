@@ -1,2 +1,4 @@
-# HTML and HTML5
-    - 学一点是一点
+# HTML - Hyper Text Markup Language
+
+> HTML: 超文本标记语言
+    
