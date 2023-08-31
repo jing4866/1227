@@ -19,17 +19,18 @@
             </div>
         </div>
         <!-- 文字 -->
-        <div class="w-word">不可能的世界</div>
+        <div class="w-word">{{ desc }}</div>
         <!-- 太阳 / 月亮 -->
         <div class="w-sun w-moon">
         </div>
     </div>
 </template>
 
-<script>
-export default {
-    name: "CssWorld"
-}
+<script setup>
+import { ref } from 'vue';
+
+const desc = ref('不可能的世界');
+
 </script>
 
 <style lang="scss">

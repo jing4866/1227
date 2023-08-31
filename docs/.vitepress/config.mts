@@ -43,7 +43,7 @@ export default defineConfig({
               items: [
                 {
                   text: '纯 CSS 创造的世界',
-                  link: '/css/csscreateworld'
+                  link: '/css/cssCreateWorld'
                 },
                 {
                   text: 'CSS 之 blend-mode',
