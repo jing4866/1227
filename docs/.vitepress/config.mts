@@ -36,10 +36,10 @@ export default defineConfig({
               collapsed: false,
               link: '/html/',
               items: [
-                {
-                  text: '被遗忘的标签',
-                  link: '/html/markup'
-                }
+                // {
+                //   text: '被遗忘的标签',
+                //   link: '/html/markup'
+                // }
               ]
             },
             // 分类： CSS

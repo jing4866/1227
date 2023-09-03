@@ -19,7 +19,10 @@
             </div>
         </div>
         <!-- 文字 -->
-        <div class="w-word">{{ desc }}</div>
+        <div class="w-word">
+            <p>日月之行，</p>
+            <p>若出其中。</p>    
+        </div>
         <!-- 太阳 / 月亮 -->
         <div class="w-sun w-moon">
         </div>
@@ -60,13 +63,18 @@ const desc = ref('不可能的世界');
     }
     .w-word{
         position: absolute;
-        top: 300px;
-        left: 60%;
+        top: 100px;
+        left: 80%;
+        writing-mode: vertical-rl;
         font-size: 30px;
         color: #ffffff;
         text-shadow: 2px 2px 0px #ddd, 4px 4px 0 #bbb;
         transform: skew(-5deg) rotate(-5deg);
         z-index: 99;
+        p:nth-child( 2 ){
+            padding-top: 1em;
+            margin-right: 10px;
+        }
     }
 }
 .css-world {
