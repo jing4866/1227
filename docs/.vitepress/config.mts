@@ -30,18 +30,6 @@ export default defineConfig({
           text: '技术世界',
           base: '/views/techblog',
           items: [
-            // 分类： HTML 
-            {
-              text: 'HTML / HTML5',
-              collapsed: false,
-              link: '/html/',
-              items: [
-                // {
-                //   text: '被遗忘的标签',
-                //   link: '/html/markup'
-                // }
-              ]
-            },
             // 分类： CSS
             {
               text: 'CSS / CSS3.0',
@@ -115,6 +103,10 @@ export default defineConfig({
                 {
                   text: '前端的一些小技巧 01',
                   link: '/trick/tricks'
+                },
+                {
+                  text: 'Logo 的优秀写法',
+                  link: '/trick/logo'
                 }
               ]
             }
