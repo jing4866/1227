@@ -95,6 +95,11 @@ export default defineConfig({
               text: ' Vue3.0',
               link: '/v3/'
             },
+            // 分类： Git
+            {
+              text: ' Git',
+              link: '/gits/'
+            },
             // 分类： 深入学习
             {
               text: 'Tricks',
