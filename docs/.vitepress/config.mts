@@ -110,7 +110,7 @@ export default defineConfig({
                   link: '/trick/tricks'
                 },
                 {
-                  text: 'Logo 的优秀写法',
+                  text: 'Logo 的优雅写法',
                   link: '/trick/logo'
                 }
               ]
