@@ -48,12 +48,12 @@ export default defineConfig({
               link: '/css/',
               items: [
                 {
-                  text: '纯 CSS 创造的世界',
-                  link: '/css/cssCreateWorld'
-                },
-                {
                   text: 'CSS 之 blend-mode',
                   link: '/css/mixBlendMode'
+                },
+                {
+                  text: '纯 CSS 创造的世界',
+                  link: '/css/cssCreateWorld'
                 }
               ] 
             },
