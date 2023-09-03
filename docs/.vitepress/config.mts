@@ -34,7 +34,13 @@ export default defineConfig({
             {
               text: 'HTML / HTML5',
               collapsed: false,
-              link: '/html/'
+              link: '/html/',
+              items: [
+                {
+                  text: '被遗忘的标签',
+                  link: '/html/markup'
+                }
+              ]
             },
             // 分类： CSS
             {
