@@ -1,5 +1,50 @@
 # CSS 之 blend-mode  
 
+
+<div class="mix-blend-box">
+    <p class="mix-blend-inner">十二廿柒</p>
+</div>
+
+<script setup></script>
+
+<style>
+.mix-blend-box{
+    position: relative;
+    border: 100px solid #000000;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+}
+.mix-blend-box .mix-blend-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: -120px;
+    margin-top: -14px;
+    mix-blend-mode: difference;
+    animation: word-moves 3s linear infinite;
+}
+@keyframes word-moves {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(100px, -50px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    75% {
+        transform: translate(-100px, 50px);
+    }
+    100% {
+        transform: translate(-0, 0);
+    }
+}
+</style>
+
 > blend-mode 是一种 CSS 数据类型，用于描述当元素重叠时，颜色应当如何呈现。  
 > 它被用于 background-blend-mode 和 mix-blend-mode 属性。
 
