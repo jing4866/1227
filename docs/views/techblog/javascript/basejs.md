@@ -307,3 +307,74 @@ new fn();
 // new fn Expected： 1
 
 ```
+
+20. 请交换以下两个变量的值，不增加新的变量。(ES6 的解构赋值就不在这里写了)
+
+```js
+
+var a = 1;
+var b = 2;
+
+// 解答
+a = a + b;
+b = a - b;
+a = a - b;
+
+```
+
+21. 判断以下代码的输出结果
+
+```js
+
+var arr1 = [,];
+console.log(arr1.length); // Expected 1
+console.log(arr1[0]);  // Expected undefined 
+
+var arr2 = [10];
+var arr3 = new Array(10);
+console.log(arr2.length == arr3.length); // Expected false
+
+var arr4 = [10.5];
+var arr5 = new Array(10.5);
+console.log(arr4[0] == arr5[0]); // Uncaught RangeError: Invalid array length
+
+```
+
+22. 请将下面的数组按随机顺序返回
+
+```js
+
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+arr.sort(() => Math.random() - 0.5);
+
+
+```
+
+23. 请输出以下代码的结果
+
+```js
+
+var obj = {};
+
+obj[0] = 1;
+obj['0'] = 2;
+
+console.log(obj[0], obj['0']); // Expected 2
+
+```
+
+24. 请输出以下代码的结果
+
+```js
+
+var arr = [1, 2, 3, 4];
+
+arr['a'] = 5;
+
+console.log( arr[0] );   // Expected 1
+console.log( arr['0'] ); // Expected 1
+console.log( arr[4] );   // Expected undefined
+console.log( arr['a'] ); // Expected 5
+
+```

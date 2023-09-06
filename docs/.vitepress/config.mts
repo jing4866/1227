@@ -20,8 +20,8 @@ export default defineConfig({
       // { text: 'Examples', link: '/markdown-examples' }
       { text: '首页', link: '/' },
       { text: '技术世界', link: '/views/techblog/' },
-      { text: '花花世界', link: '/views/dazzling/' },
-      { text: '世界之外', link: '/views/blackhole/' }
+      // { text: '花花世界', link: '/views/dazzling/' },
+      // { text: '世界之外', link: '/views/blackhole/' }
     ],
 
     sidebar: {
@@ -30,6 +30,25 @@ export default defineConfig({
           text: '技术世界',
           base: '/views/techblog',
           items: [
+            // HTML
+            {
+              text: 'HTML / HTML5',
+              link: '/html/',
+              items: [
+                {
+                  text: '文档声明',
+                  link: '/html/doctype'
+                },
+                {
+                  text: 'HTML 语义化',
+                  link: '/html/element'
+                },
+                {
+                  text: '无障碍开发',
+                  link: '/html/accessibility'
+                }
+              ]
+            },
             // 分类： CSS
             {
               text: 'CSS / CSS3.0',
@@ -112,6 +131,10 @@ export default defineConfig({
                 {
                   text: 'Logo 的优雅写法',
                   link: '/trick/logo'
+                },
+                {
+                  text: '关于回车和空格的一点小背景',
+                  link: '/trick/spaceenter'
                 }
               ]
             }
