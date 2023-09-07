@@ -129,6 +129,10 @@ export default defineConfig({
                   link: '/trick/tricks'
                 },
                 {
+                  text: '前端的一些小技巧 02',
+                  link: '/trick/tricks1'
+                },
+                {
                   text: 'Logo 的优雅写法',
                   link: '/trick/logo'
                 },

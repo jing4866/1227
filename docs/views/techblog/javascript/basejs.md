@@ -378,3 +378,17 @@ console.log( arr[4] );   // Expected undefined
 console.log( arr['a'] ); // Expected 5
 
 ```
+
+25. 请输出以下代码的结果
+
+```js 
+
+var a = 1 && 2;
+
+var b = 0 && 2;
+
+console.log(a); // Expected 2
+
+console.log(b); // Expected 0
+
+```
