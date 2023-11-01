@@ -78,6 +78,10 @@ export default defineConfig({
                   link: '/javascript/objIsEmpty'
                 },
                 {
+                  text: '旋涡二维数组',
+                  link: '/javascript/vortex'
+                },
+                {
                   text: 'IIFE 如何提升性能.',
                   link: '/javascript/IIFE'
                 },
@@ -95,10 +99,10 @@ export default defineConfig({
                 }
               ] 
             },
-            {
-              text: 'ES6 / ES7 / ES8...',
-              link: '/es/',
-            },
+            // {
+            //   text: 'ES6 / ES7 / ES8...',
+            //   link: '/es/',
+            // },
             // 分类： Typescript
             {
               text: 'TypeScript',
@@ -106,14 +110,18 @@ export default defineConfig({
             },
             // 分类： Vue
             {
-              text: 'Vue2.0',
-              link: '/v2/'
+              text: 'Vue2.0 & Vue3.0',
+              link: '/vue/',
+              items: [{
+                text: '[V2&V3] 响应式数据实现差异',
+                link: '/vue/responsive'
+              }]
             },
-            // 分类： Vue
-            {
-              text: ' Vue3.0',
-              link: '/v3/'
-            },
+            // // 分类： Vue
+            // {
+            //   text: ' Vue3.0',
+            //   link: '/v3/'
+            // },
             // 分类： Git
             {
               text: ' Git',

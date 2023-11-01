@@ -68,6 +68,12 @@ console.log(i); // 2
 
 以前我们为了解决这个问题，所使用的模式就是 IIFE 。
 
+::: warning
+
+IIFE 通常用于强行改变作用域
+
+:::
+
 ```js
 
 for (var i = 0; i < 2; i++) {
